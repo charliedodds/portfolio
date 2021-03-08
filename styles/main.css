@@ -2,13 +2,15 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .purple-block {
   background-color: #663a89;
   width: 1px;
-  transform: rotate(-35deg) translateY(25vh);
-  animation: animate-sm-screens 1000ms ease-in-out 1000ms forwards;
+  transform: rotate(-35deg) translateX(-50vw) translateY(25vh);
+  animation: animate-sm-screens 2000ms ease-in-out 1000ms forwards;
 }
 
 .purple-block:nth-of-type(1) {
@@ -24,51 +26,51 @@
 
 @keyframes animate-sm-screens {
   100% {
-    transform: rotate(-35deg) translateY(25vh) scaleX(2000);
+    transform: rotate(-35deg) translateX(-50vw) translateY(25vh) scaleX(10000);
   }
 }
 @media screen and (min-width: 767.98px) {
   .purple-block {
-    transform: rotate(-35deg) translateY(40vh);
-    animation: animate-md-screens 1000ms ease-in-out 1000ms forwards;
+    transform: rotate(-35deg) translateX(-50vw) translateY(40vh);
+    animation: animate-md-screens 2000ms ease-in-out 1000ms forwards;
   }
 }
 @keyframes animate-md-screens {
   100% {
-    transform: rotate(-35deg) translateY(40vh) scaleX(2000);
+    transform: rotate(-35deg) translateX(-50vw) translateY(40vh) scaleX(10000);
   }
 }
 @media screen and (min-width: 1023.98px) {
   .purple-block {
-    transform: rotate(-35deg) translateY(50vh);
-    animation: animate-lg-screens 1000ms ease-in-out 1000ms forwards;
+    transform: rotate(-35deg) translateX(-50vw) translateY(50vh);
+    animation: animate-lg-screens 2000ms ease-in-out 1000ms forwards;
   }
 }
 @keyframes animate-lg-screens {
   100% {
-    transform: rotate(-35deg) translateY(50vh) scaleX(2000);
+    transform: rotate(-35deg) translateX(-50vw) translateY(50vh) scaleX(10000);
   }
 }
 @media screen and (min-width: 1439.98px) {
   .purple-block {
-    transform: rotate(-28deg) translateY(50vh);
-    animation: animate-lg-screens 1000ms ease-in-out 1000ms forwards;
+    transform: rotate(-28deg) translateX(-50vw) translateY(50vh);
+    animation: animate-xl-screens 2000ms ease-in-out 1000ms forwards;
   }
 }
-@keyframes animate-lg-screens {
+@keyframes animate-xl-screens {
   100% {
-    transform: rotate(-28deg) translateY(50vh) scaleX(2500);
+    transform: rotate(-28deg) translateX(-50vw) translateY(50vh) scaleX(10000);
   }
 }
 @media screen and (min-width: 2559.98px) {
   .purple-block {
-    transform: rotate(-23deg) translateY(60vh);
-    animation: animate-lg-screens 1000ms ease-in-out 1000ms forwards;
+    transform: rotate(-23deg) translateX(-50vw) translateY(60vh);
+    animation: animate-xxl-screens 2000ms ease-in-out 1000ms forwards;
   }
 }
-@keyframes animate-lg-screens {
+@keyframes animate-xxl-screens {
   100% {
-    transform: rotate(-23deg) translateY(60vh) scaleX(4000);
+    transform: rotate(-23deg) translateX(-50vw) translateY(60vh) scaleX(10000);
   }
 }
 html,
