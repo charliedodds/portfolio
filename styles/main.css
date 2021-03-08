@@ -1,3 +1,29 @@
+.purple-block {
+  background-color: #663a89;
+  width: 200vw;
+  transform: rotate(-35deg) translateX(-50vw);
+}
+
+.purple-block:nth-of-type(1) {
+  height: 1.25vh;
+  margin-bottom: 50px;
+  filter: blur(12px);
+}
+
+.purple-block:nth-of-type(2) {
+  height: 1.75vh;
+  filter: blur(14px);
+}
+
+html,
 body {
-  background-color: rebeccapurple;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #121212;
+  overflow: hidden;
 }
