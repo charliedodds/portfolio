@@ -33,8 +33,8 @@ body {
 }
 
 .purple-blocks-wrapper {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -113,12 +113,29 @@ body {
 }
 .landing-page {
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fade-up 1200ms ease-in-out 2000ms forwards;
 }
 .landing-page .landing-page__subtitle {
   margin: 1rem 0;
+}
+
+@keyframes fade-up {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.main {
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
@@ -126,4 +143,5 @@ body {
   width: 100vw;
   background-color: #121212;
   color: #fefefe;
+  overflow: hidden;
 }
