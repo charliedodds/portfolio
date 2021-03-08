@@ -1,12 +1,19 @@
+.body-wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .purple-block {
   background-color: #663a89;
-  width: 200vw;
-  transform: rotate(-35deg) translateX(-50vw);
+  width: 1px;
+  transform: rotate(-35deg) translateY(25vh);
+  animation: animate-sm-screens 1000ms ease-in-out 1000ms forwards;
 }
 
 .purple-block:nth-of-type(1) {
   height: 1.25vh;
-  margin-bottom: 50px;
+  margin: 100px 0 50px;
   filter: blur(12px);
 }
 
@@ -15,6 +22,55 @@
   filter: blur(14px);
 }
 
+@keyframes animate-sm-screens {
+  100% {
+    transform: rotate(-35deg) translateY(25vh) scaleX(2000);
+  }
+}
+@media screen and (min-width: 767.98px) {
+  .purple-block {
+    transform: rotate(-35deg) translateY(40vh);
+    animation: animate-md-screens 1000ms ease-in-out 1000ms forwards;
+  }
+}
+@keyframes animate-md-screens {
+  100% {
+    transform: rotate(-35deg) translateY(40vh) scaleX(2000);
+  }
+}
+@media screen and (min-width: 1023.98px) {
+  .purple-block {
+    transform: rotate(-35deg) translateY(50vh);
+    animation: animate-lg-screens 1000ms ease-in-out 1000ms forwards;
+  }
+}
+@keyframes animate-lg-screens {
+  100% {
+    transform: rotate(-35deg) translateY(50vh) scaleX(2000);
+  }
+}
+@media screen and (min-width: 1439.98px) {
+  .purple-block {
+    transform: rotate(-28deg) translateY(50vh);
+    animation: animate-lg-screens 1000ms ease-in-out 1000ms forwards;
+  }
+}
+@keyframes animate-lg-screens {
+  100% {
+    transform: rotate(-28deg) translateY(50vh) scaleX(2500);
+  }
+}
+@media screen and (min-width: 2559.98px) {
+  .purple-block {
+    transform: rotate(-23deg) translateY(60vh);
+    animation: animate-lg-screens 1000ms ease-in-out 1000ms forwards;
+  }
+}
+@keyframes animate-lg-screens {
+  100% {
+    transform: rotate(-23deg) translateY(60vh) scaleX(4000);
+  }
+}
 html,
 body {
   margin: 0;
@@ -25,5 +81,4 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #121212;
-  overflow: hidden;
 }

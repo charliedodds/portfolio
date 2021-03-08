@@ -1,16 +1,75 @@
 .purple-block {
-	background-color: $very-dark-purple;
-	width: 200vw;
-	transform: rotate(-35deg) translateX(-50vw);
+	background-color: $dark-purple;
+	width: 1px;
+	transform: rotate(-35deg) translateY(25vh);
+	animation: animate-sm-screens 1000ms ease-in-out 1000ms forwards;
 }
 
 .purple-block:nth-of-type(1) {
 	height: 1.25vh;
-	margin-bottom: 50px;
+	margin: 100px 0 50px;
 	filter: blur(12px);
 }
 
 .purple-block:nth-of-type(2) {
 	height: 1.75vh;
 	filter: blur(14px);
+}
+
+@keyframes animate-sm-screens {
+	100% {
+		transform: rotate(-35deg) translateY(25vh) scaleX(2000);
+	}
+}
+
+@media screen and (min-width: 767.98px) {
+	.purple-block {
+		transform: rotate(-35deg) translateY(40vh);
+		animation: animate-md-screens 1000ms ease-in-out 1000ms forwards;
+	}
+}
+
+@keyframes animate-md-screens {
+	100% {
+		transform: rotate(-35deg) translateY(40vh) scaleX(2000);
+	}
+}
+
+@media screen and (min-width: 1023.98px) {
+	.purple-block {
+		transform: rotate(-35deg) translateY(50vh);
+		animation: animate-lg-screens 1000ms ease-in-out 1000ms forwards;
+	}
+}
+
+@keyframes animate-lg-screens {
+	100% {
+		transform: rotate(-35deg) translateY(50vh) scaleX(2000);
+	}
+}
+
+@media screen and (min-width: 1439.98px) {
+	.purple-block {
+		transform: rotate(-28deg) translateY(50vh);
+		animation: animate-lg-screens 1000ms ease-in-out 1000ms forwards;
+	}
+}
+
+@keyframes animate-lg-screens {
+	100% {
+		transform: rotate(-28deg) translateY(50vh) scaleX(2500);
+	}
+}
+
+@media screen and (min-width: 2559.98px) {
+	.purple-block {
+		transform: rotate(-23deg) translateY(60vh);
+		animation: animate-lg-screens 1000ms ease-in-out 1000ms forwards;
+	}
+}
+
+@keyframes animate-lg-screens {
+	100% {
+		transform: rotate(-23deg) translateY(60vh) scaleX(4000);
+	}
 }
