@@ -1,6 +1,11 @@
 @import './abstracts/variables';
+@import './abstracts/_placeholders';
 
-@import './layout/body-wrapper.scss';
-@import './layout/purple-blocks.scss';
+@import './base/reset';
+@import './base/typography';
+
+@import './layout/purple-blocks-wrapper';
+@import './layout/purple-blocks';
+@import './layout/header';
 
 @import './themes/themes';

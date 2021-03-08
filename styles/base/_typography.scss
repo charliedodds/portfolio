@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+body {
+	font-family: Roboto;
+	font-weight: 100;
+	font-size: 1.6rem;
+}
+
+.landing-page {
+	.landing-page__title,
+	.landing-page__subtitle {
+		font-weight: 100;
+	}
+
+	.landing-page__title {
+		font-size: 4rem;
+	}
+
+	.landing-page__subtitle {
+		font-size: 2rem;
+	}
+}
