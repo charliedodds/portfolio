@@ -1,6 +1,7 @@
 .purple-block {
 	background-color: $dark-purple;
 	width: 1px;
+	position: relative;
 	transform: rotate(-35deg) translateX(-50vw) translateY(25vh);
 	animation: animate-sm-screens 2000ms ease-in-out 1000ms forwards;
 }
@@ -15,6 +16,19 @@
 	height: 3.25vh;
 	// filter: blur(28px);
 }
+
+// .purple-block::before {
+// 	content: '';
+// 	margin: -35px;
+// 	position: absolute;
+// 	background-color: $dark-purple;
+// 	top: 0;
+// 	bottom: 0;
+// 	left: 0;
+// 	top: 0;
+// 	filter: blur(20px);
+// 	z-index: 1;
+// }
 
 @keyframes animate-sm-screens {
 	100% {
