@@ -5,8 +5,16 @@
 @import './base/typography';
 
 @import './layout/purple-blocks-wrapper';
-@import './layout/purple-blocks';
 @import './layout/header';
 @import './layout/main';
 
+@import './components/purple-blocks';
+@import './components/nav';
+@import './components/logo';
+
 @import './themes/themes';
+
+div {
+	margin: 5rem 0.25rem;
+	font-size: 2.4rem;
+}
