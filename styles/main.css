@@ -150,14 +150,13 @@ body {
   }
 }
 .nav {
-  position: sticky;
+  position: absolute;
   top: 1rem;
+  right: 1rem;
   height: 50px;
   width: 50px;
-  background-color: #121212;
   border-radius: 50%;
-  margin: 1rem 1rem 1rem auto;
-  cursor: pointer;
+  margin-left: auto;
   transition: all 1000ms;
 }
 .nav .nav__list {
@@ -170,15 +169,13 @@ body {
 }
 
 .nav.expand {
-  cursor: default;
+  background-color: #121212;
   top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
   margin: 0;
-  border-radius: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
+  border-radius: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -204,17 +201,19 @@ body {
     transform: translateY(0);
   }
 }
-.nav .nav__logo {
-  display: inline-block;
+.nav-btn {
+  cursor: pointer;
+  display: block;
+  position: sticky;
+  top: 1rem;
+  right: 1rem;
   height: 50px;
+  margin-left: auto;
+  z-index: 2;
 }
 
-.expand .nav__logo {
+.nav-btn--clicked {
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 1rem;
-  margin-right: 1rem;
 }
 
 body {
