@@ -2,13 +2,12 @@ const navBtn = document.querySelector('.nav-btn');
 const nav = document.querySelector('nav');
 const navLinks = document.querySelectorAll('.nav a');
 
-const toggleClasses = () => {
+const toggleNav = () => {
 	nav.classList.toggle('expand');
-	nav.classList.toggle('collapse');
 };
 
 const handleNavClick = (e) => {
-	toggleClasses();
+	toggleNav();
 };
 
 for (let link of navLinks) {
