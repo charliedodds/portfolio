@@ -7,9 +7,12 @@
   height: 50px;
   margin-left: auto;
   z-index: 2;
-  transform: translateX(200%);
+  transform: translateX(200px);
+  animation: slide-in 2000ms ease-in-out 3000ms forwards;
 }
 
-.nav-btn--clicked {
-  position: absolute;
+@keyframes slide-in {
+  100% {
+    transform: translateX(0);
+  }
 }

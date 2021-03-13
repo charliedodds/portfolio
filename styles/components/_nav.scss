@@ -1,4 +1,5 @@
 .nav {
+	background-color: $black;
 	position: fixed;
 	top: 1rem;
 	right: 1rem;
@@ -7,6 +8,10 @@
 	border-radius: 50%;
 	margin-left: auto;
 	transition: all 1000ms;
+	opacity: 0.7;
+	transform: translateX(200px);
+	animation: slide-in 2000ms ease-in-out 3000ms forwards;
+
 	.nav__list {
 		display: none;
 		li {
@@ -18,13 +23,13 @@
 }
 
 .nav.expand {
-	background-color: $black;
 	top: 0;
 	right: 0;
 	margin: 0;
 	width: 100%;
 	height: 100%;
 	border-radius: 0;
+	opacity: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -48,5 +53,11 @@
 	100% {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+@keyframes slide-in {
+	100% {
+		transform: translateX(0);
 	}
 }
