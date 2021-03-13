@@ -195,7 +195,7 @@ body {
   font-size: 2.4rem;
 }
 .nav.expand .nav__list li {
-  animation: fade-up 1000ms ease-in-out 1200ms alternate;
+  animation: fade-up 1000ms ease-in-out 1200ms forwards;
 }
 
 @keyframes fade-up {
@@ -230,9 +230,4 @@ body {
 body {
   background-color: #121212;
   color: #fefefe;
-}
-
-div {
-  margin: 5rem 0.25rem;
-  font-size: 2.4rem;
 }
