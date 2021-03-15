@@ -52,8 +52,15 @@ body {
   font-weight: 100;
   font-size: 2.5rem;
 }
-.about-page .skills-container {
+.about-page .about-page__bio {
+  text-transform: lowercase;
+}
+.about-page .tools-container {
   font-size: 3rem;
+}
+
+.capital {
+  font-size: 1.1em;
 }
 
 .purple-blocks-wrapper {
@@ -95,35 +102,37 @@ body {
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
-  margin-bottom: 6rem;
 }
 
 .about-page {
-  margin: 4rem 2rem;
+  margin: 0 2rem;
 }
 .about-page .about-page__title {
   text-align: center;
-  margin: 2rem 0;
+  margin: 2.5rem 0;
 }
 .about-page .about-page__subtitle {
   text-align: center;
   margin: 1.5rem 0 1rem;
 }
+.about-page .about-page__bio {
+  margin: 0.5rem 0;
+}
 .about-page ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .about-page ul li {
   margin: 0.5rem 1rem;
 }
-.about-page .skills-container {
+.about-page .tools-container {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.about-page .skills-container i {
+.about-page .tools-container i {
   margin: 1rem;
 }
 

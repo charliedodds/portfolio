@@ -31,7 +31,16 @@ body {
 		font-weight: 100;
 		font-size: 2.5rem;
 	}
-	.skills-container {
+
+	.about-page__bio {
+		text-transform: lowercase;
+	}
+
+	.tools-container {
 		font-size: 3rem;
 	}
+}
+
+.capital {
+	font-size: 1.1em;
 }
