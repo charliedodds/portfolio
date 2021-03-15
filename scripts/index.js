@@ -1,3 +1,7 @@
+// Initialise AOS library
+
+AOS.init();
+
 const navBtn = document.querySelector('.nav-btn');
 const nav = document.querySelector('nav');
 const navLinks = document.querySelectorAll('.nav a');
