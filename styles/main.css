@@ -59,6 +59,18 @@ body {
   font-size: 3rem;
 }
 
+.work-page {
+  font-size: 1.8rem;
+}
+.work-page .work-page__title {
+  font-weight: 100;
+  font-size: 3rem;
+}
+.work-page .work-page__subtitle {
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
 .capital {
   font-size: 1.1em;
 }
@@ -105,11 +117,11 @@ body {
 }
 
 .about-page {
-  margin: 0 2rem;
+  margin: 4rem 2rem;
 }
 .about-page .about-page__title {
   text-align: center;
-  margin: 2.5rem 0;
+  margin: 0 0 2.5rem;
 }
 .about-page .about-page__subtitle {
   text-align: center;
@@ -134,6 +146,21 @@ body {
 }
 .about-page .tools-container i {
   margin: 1rem;
+}
+
+.work-page {
+  margin: 4rem 2rem;
+}
+.work-page .work-page__title {
+  text-align: center;
+  margin: 0 0 2.5rem;
+}
+.work-page .work-page__subtitle {
+  text-align: center;
+  margin: 1.5rem 0 1rem;
+}
+.work-page .work-page__description {
+  margin: 0.5rem 0;
 }
 
 .purple-block {
