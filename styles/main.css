@@ -30,6 +30,16 @@ body {
   font-size: 1.6rem;
 }
 
+button {
+  color: #fefefecc;
+  font-size: inherit;
+  font-weight: 100;
+  font-family: inherit;
+}
+button:hover {
+  color: #fefefe;
+}
+
 .landing-page .landing-page__title,
 .landing-page .landing-page__subtitle {
   font-weight: 100;
@@ -38,6 +48,9 @@ body {
   font-size: 4rem;
 }
 .landing-page .landing-page__subtitle {
+  font-size: 2rem;
+}
+.landing-page .landing-page__links {
   font-size: 2rem;
 }
 
@@ -68,6 +81,9 @@ body {
 }
 .work-page .work-page__subtitle {
   font-weight: 100;
+  font-size: 2.5rem;
+}
+.work-page .work-page__links {
   font-size: 2.5rem;
 }
 
@@ -155,12 +171,19 @@ body {
   text-align: center;
   margin: 0 0 2.5rem;
 }
-.work-page .work-page__subtitle {
+.work-page .work-page__project {
+  margin-bottom: 2.5rem;
+}
+.work-page .work-page__project .work-page__subtitle {
   text-align: center;
   margin: 1.5rem 0 1rem;
 }
-.work-page .work-page__description {
+.work-page .work-page__project .work-page__description {
   margin: 0.5rem 0;
+}
+.work-page .work-page__project .work-page__links {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .purple-block {
@@ -308,6 +331,13 @@ body {
     transform: translateX(0);
   }
 }
+button {
+  cursor: pointer;
+  background-color: inherit;
+  border: 0;
+  transition: color 400ms;
+}
+
 body {
   background-color: #121212;
   color: #fefefe;
