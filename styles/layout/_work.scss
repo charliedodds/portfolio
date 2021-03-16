@@ -1,0 +1,24 @@
+.work-page {
+	margin: 4rem 2rem;
+	.work-page__title {
+		text-align: center;
+		margin: 0 0 2.5rem;
+	}
+
+	.work-page__project {
+		margin-bottom: 2.5rem;
+		.work-page__subtitle {
+			text-align: center;
+			margin: 1.5rem 0 1rem;
+		}
+
+		.work-page__description {
+			margin: 0.5rem 0;
+		}
+
+		.work-page__links {
+			display: flex;
+			justify-content: space-evenly;
+		}
+	}
+}

@@ -6,6 +6,16 @@ body {
 	font-size: 1.6rem;
 }
 
+button {
+	color: $white-translucent;
+	font-size: inherit;
+	font-weight: 100;
+	font-family: inherit;
+	&:hover {
+		color: $white;
+	}
+}
+
 .landing-page {
 	.landing-page__title,
 	.landing-page__subtitle {
@@ -17,6 +27,10 @@ body {
 	}
 
 	.landing-page__subtitle {
+		font-size: 2rem;
+	}
+
+	.landing-page__links {
 		font-size: 2rem;
 	}
 }
@@ -38,6 +52,22 @@ body {
 
 	.tools-container {
 		font-size: 3rem;
+	}
+}
+
+.work-page {
+	font-size: 1.8rem;
+	.work-page__title {
+		font-weight: 100;
+		font-size: 3rem;
+	}
+	.work-page__subtitle {
+		font-weight: 100;
+		font-size: 2.5rem;
+	}
+
+	.work-page__links {
+		font-size: 2.5rem;
 	}
 }
 
