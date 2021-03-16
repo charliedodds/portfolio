@@ -1,6 +1,19 @@
-button {
-	cursor: pointer;
-	background-color: inherit;
-	border: 0;
-	transition: color 400ms;
+.landing-page__links {
+	margin-top: 1rem;
+	a {
+		cursor: pointer;
+		background-color: inherit;
+		border: 0;
+		transition: color 400ms;
+		margin: 1rem;
+	}
+}
+
+.work-page__links {
+	a {
+		cursor: pointer;
+		background-color: inherit;
+		border: 0;
+		transition: color 400ms;
+	}
 }

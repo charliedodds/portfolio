@@ -30,16 +30,6 @@ body {
   font-size: 1.6rem;
 }
 
-button {
-  color: #fefefecc;
-  font-size: inherit;
-  font-weight: 100;
-  font-family: inherit;
-}
-button:hover {
-  color: #fefefe;
-}
-
 .landing-page .landing-page__title,
 .landing-page .landing-page__subtitle {
   font-weight: 100;
@@ -51,7 +41,16 @@ button:hover {
   font-size: 2rem;
 }
 .landing-page .landing-page__links {
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+.landing-page .landing-page__links a {
+  color: #fefefecc;
+  font-size: inherit;
+  font-weight: 100;
+  font-family: inherit;
+}
+.landing-page .landing-page__links a:hover {
+  color: #fefefe;
 }
 
 .about-page {
@@ -85,6 +84,15 @@ button:hover {
 }
 .work-page .work-page__links {
   font-size: 2.5rem;
+}
+.work-page .work-page__links a {
+  color: #fefefecc;
+  font-size: inherit;
+  font-weight: 100;
+  font-family: inherit;
+}
+.work-page .work-page__links a:hover {
+  color: #fefefe;
 }
 
 .capital {
@@ -331,7 +339,18 @@ button:hover {
     transform: translateX(0);
   }
 }
-button {
+.landing-page__links {
+  margin-top: 1rem;
+}
+.landing-page__links a {
+  cursor: pointer;
+  background-color: inherit;
+  border: 0;
+  transition: color 400ms;
+  margin: 1rem;
+}
+
+.work-page__links a {
   cursor: pointer;
   background-color: inherit;
   border: 0;
