@@ -197,7 +197,9 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.about-page .tools-container i {
+.about-page .tools-container img {
+  display: inline-block;
+  height: 30px;
   margin: 1rem;
 }
 
