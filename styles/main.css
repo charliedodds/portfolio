@@ -95,6 +95,30 @@ body {
   color: #fefefe;
 }
 
+.contact-page {
+  font-size: 1.8rem;
+}
+.contact-page .contact-page__title {
+  font-weight: 100;
+  font-size: 3rem;
+}
+.contact-page .contact-page__subtitle {
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+.contact-page .contact-page__links {
+  font-size: 2.5rem;
+}
+.contact-page .contact-page__links a {
+  color: #fefefecc;
+  font-size: inherit;
+  font-weight: 100;
+  font-family: inherit;
+}
+.contact-page .contact-page__links a:hover {
+  color: #fefefe;
+}
+
 .capital {
   font-size: 1.1em;
 }
@@ -142,6 +166,11 @@ body {
 
 .about-page {
   margin: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .about-page .about-page__title {
   text-align: center;
@@ -192,6 +221,26 @@ body {
 .work-page .work-page__project .work-page__links {
   display: flex;
   justify-content: space-evenly;
+}
+
+.contact-page {
+  margin: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-page .contact-page__title {
+  text-align: center;
+  margin: 0 0 2.5rem;
+}
+.contact-page .contact-page__subtitle {
+  text-align: center;
+  margin: 1.5rem 0 1rem;
+}
+.contact-page .contact-page__links a {
+  margin: 2rem;
 }
 
 .purple-block {
