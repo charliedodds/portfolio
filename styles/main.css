@@ -70,12 +70,6 @@ body {
 .about-page .tools-container {
   font-size: 3rem;
 }
-.about-page .tools-container .tools-img svg {
-  fill: #fefefe;
-}
-.about-page .tools-container .tools-img svg path {
-  fill: #fefefe;
-}
 
 .work-page {
   font-size: 1.8rem;
@@ -205,12 +199,8 @@ body {
 }
 .about-page .tools-container img {
   display: inline-block;
-  height: 40px;
+  height: 30px;
   margin: 1rem;
-}
-.about-page .tools-container img svg path {
-  color: #fefefe;
-  fill: #fefefe;
 }
 
 .work-page {
