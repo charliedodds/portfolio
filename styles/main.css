@@ -175,6 +175,7 @@ body {
 }
 .about-page .about-page__title {
   text-align: center;
+  margin: 0 0 2.5rem;
 }
 .about-page .about-page__subtitle {
   text-align: center;
