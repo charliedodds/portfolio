@@ -24,30 +24,45 @@ navBtn.addEventListener('click', handleNavClick);
 
 // CAROUSEL
 
-let viewWidth = 0;
+const projectsWrapper = document.querySelector('.projects-carousel__projects-wrapper');
+const indicators = document.querySelectorAll('.fa-circle');
 
-const getTranslateXString = () => `translateX(-${viewWidth}vw)`;
+let viewingProject = 0;
 
-const projectsWrapper = document.querySelector('.work-page__projects-wrapper');
+const getTranslateXString = () => `translateX(-${viewingProject * 100}vw)`;
+
+const updateProjectIndicators = () => {
+	indicators.forEach((circle) => {
+		circle.classList.add('far');
+		circle.classList.remove('fas');
+	});
+	indicators[viewingProject].classList.add('fas');
+};
 
 const getNextProject = () => {
-	if (viewWidth < 100) {
-		viewWidth += 100;
+	if (viewingProject < 1) {
+		viewingProject += 1;
 	} else {
-		viewWidth = 0;
+		viewingProject = 0;
 	}
+	updateProjectIndicators();
 	projectsWrapper.style.transform = getTranslateXString();
 };
 
 const getPrevProject = () => {
-	if (viewWidth < 100) {
-		viewWidth -= 100;
+	if (viewingProject >= 1) {
+		viewingProject -= 1;
 	} else {
-		viewWidth = 100;
+		viewingProject = 1;
 	}
+	updateProjectIndicators();
 	projectsWrapper.style.transform = getTranslateXString();
 };
 
-const workPageTitle = document.querySelector('.work-page__title');
+const rightBtn = document.querySelector('.right-btn');
 
-workPageTitle.addEventListener('click', getNextProject);
+rightBtn.addEventListener('click', getNextProject);
+
+const leftBtn = document.querySelector('.left-btn');
+
+leftBtn.addEventListener('click', getPrevProject);

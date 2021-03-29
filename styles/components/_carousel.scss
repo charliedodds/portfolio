@@ -1,16 +1,15 @@
-.work-page__projects-carousel {
+.projects-carousel {
 	height: 100%;
 	width: 100%;
-	.work-page__projects-wrapper {
-		height: 100%;
+	.projects-carousel__projects-wrapper {
 		display: flex;
 		transition: transform 2s cubic-bezier(0.9, 0, 0.1, 1);
-		.work-page__project {
+		.project {
 			min-width: 100%;
 			margin-bottom: 2.5rem;
 			padding: 0 2rem;
 
-			.work-page__subtitle {
+			.project__title {
 				text-align: center;
 				margin: 1.5rem;
 			}
@@ -22,32 +21,25 @@
 				border-radius: 4px;
 			}
 
-			.work-page__description {
+			.project__description {
 				margin: 2rem;
 			}
 
-			.work-page__links {
+			.project__links {
 				display: flex;
 				justify-content: space-evenly;
 			}
 		}
 	}
-}
-
-@keyframes carousel {
-	0% {
-		transform: translateX(0);
-	}
-
-	25% {
-		transform: translateX(0);
-	}
-
-	75% {
-		transform: translateX(-100vw);
-	}
-
-	100% {
-		transform: translateX(-100vw);
+	.projects-carousel__buttons {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 1rem;
+		.indicators {
+			i {
+				margin: 0.25rem;
+			}
+		}
 	}
 }
