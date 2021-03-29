@@ -1,0 +1,53 @@
+.work-page__projects-carousel {
+	height: 100%;
+	width: 100%;
+	.work-page__projects-wrapper {
+		height: 100%;
+		display: flex;
+		animation: 15s cubic-bezier(0.9, 0, 0.1, 1) infinite alternate carousel;
+		.work-page__project {
+			min-width: 100%;
+			margin-bottom: 2.5rem;
+			padding: 0 2rem;
+
+			.work-page__subtitle {
+				text-align: center;
+				margin: 1.5rem;
+			}
+
+			img {
+				max-width: 80%;
+				display: block;
+				margin: 2rem auto;
+				border-radius: 4px;
+			}
+
+			.work-page__description {
+				margin: 2rem;
+			}
+
+			.work-page__links {
+				display: flex;
+				justify-content: space-evenly;
+			}
+		}
+	}
+}
+
+@keyframes carousel {
+	0% {
+		transform: translateX(0);
+	}
+
+	25% {
+		transform: translateX(0);
+	}
+
+	75% {
+		transform: translateX(-100vw);
+	}
+
+	100% {
+		transform: translateX(-100vw);
+	}
+}

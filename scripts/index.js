@@ -1,6 +1,6 @@
-// Initialise AOS library
-
+// Initialise AOS third party library - makes animate on scroll work for the main sections
 AOS.init();
+// --------
 
 const navBtn = document.querySelector('.nav-btn');
 const nav = document.querySelector('nav');
