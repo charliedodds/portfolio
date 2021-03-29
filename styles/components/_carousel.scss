@@ -1,6 +1,9 @@
 .projects-carousel {
 	height: 100%;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	.projects-carousel__projects-wrapper {
 		display: flex;
 		transition: transform 2s cubic-bezier(0.9, 0, 0.1, 1);
