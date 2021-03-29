@@ -433,6 +433,9 @@ body {
 .projects-carousel .projects-carousel__projects-wrapper .project .project__description {
   margin: 2rem;
 }
+.projects-carousel .projects-carousel__projects-wrapper .project .project__description p {
+  margin: 0.5rem 0;
+}
 .projects-carousel .projects-carousel__projects-wrapper .project .project__links {
   display: flex;
   justify-content: space-evenly;
