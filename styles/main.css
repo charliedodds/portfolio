@@ -24,10 +24,15 @@ a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 767.98px) {
+  html {
+    font-size: 100%;
+  }
+}
 body {
   font-family: Roboto;
   font-weight: 100;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .landing-page .landing-page__title,
@@ -38,6 +43,9 @@ body {
   font-size: 4rem;
 }
 .landing-page .landing-page__subtitle {
+  font-size: 2.5rem;
+}
+.landing-page .landing-page__location {
   font-size: 2rem;
 }
 .landing-page .landing-page__links {
@@ -53,16 +61,13 @@ body {
   color: #fefefe;
 }
 
-.about-page {
-  font-size: 1.8rem;
-}
 .about-page .about-page__title {
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .about-page .about-page__subtitle {
   font-weight: 100;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .about-page .about-page__bio {
   text-transform: lowercase;
@@ -71,12 +76,9 @@ body {
   font-size: 3rem;
 }
 
-.work-page {
-  font-size: 1.8rem;
-}
 .work-page .work-page__title {
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .work-page .project__title {
   font-weight: 100;
@@ -102,9 +104,6 @@ body {
   font-size: 1.25rem;
 }
 
-.contact-page {
-  font-size: 1.8rem;
-}
 .contact-page .contact-page__title {
   font-weight: 100;
   font-size: 3rem;
@@ -124,10 +123,6 @@ body {
 }
 .contact-page .contact-page__links a:hover {
   color: #fefefe;
-}
-
-.capital {
-  font-size: 1.1em;
 }
 
 .purple-blocks-wrapper {
@@ -173,7 +168,7 @@ body {
 }
 
 .about-page {
-  margin: 4rem 2rem;
+  margin: 0 2rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -213,7 +208,6 @@ body {
 }
 
 .work-page {
-  margin: 4rem 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -224,7 +218,6 @@ body {
 }
 
 .contact-page {
-  margin: 4rem 2rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

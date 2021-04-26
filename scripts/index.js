@@ -22,7 +22,7 @@ for (let link of navLinks) {
 
 navBtn.addEventListener('click', handleNavClick);
 
-// CAROUSEL
+// PROJECTS CAROUSEL
 
 const projectsWrapper = document.querySelector('.projects-carousel__projects-wrapper');
 const indicators = document.querySelectorAll('.fa-circle');

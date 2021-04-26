@@ -16,3 +16,9 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+
+@media screen and (min-width : 767.98px) {
+	html {
+		font-size: 100%;
+	}
+}
