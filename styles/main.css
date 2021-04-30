@@ -450,7 +450,7 @@ body {
 
 .projects-carousel {
   height: 100%;
-  width: 100%;
+  width: 100vw;
 }
 .projects-carousel .projects-carousel__projects-wrapper {
   display: flex;
