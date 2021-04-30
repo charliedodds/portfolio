@@ -1,9 +1,9 @@
 .work-page {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	.work-page__title {
-		text-align: center;
-		margin: 2.5rem;
-	}
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .work-page__title {
+    text-align: center;
+    margin: 2.5rem;
+  }
 }

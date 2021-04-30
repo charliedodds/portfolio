@@ -29,10 +29,15 @@ a {
     font-size: 100%;
   }
 }
+@media screen and (min-width: 1023.98px) {
+  html {
+    font-size: 100%;
+  }
+}
 body {
   font-family: Roboto;
   font-weight: 100;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .landing-page .landing-page__title,
@@ -68,9 +73,6 @@ body {
 .about-page .about-page__subtitle {
   font-weight: 100;
   font-size: 3rem;
-}
-.about-page .about-page__bio {
-  text-transform: lowercase;
 }
 .about-page .tools-container {
   font-size: 3rem;
@@ -125,6 +127,11 @@ body {
   color: #fefefe;
 }
 
+@media screen and (min-width: 767.98px) {
+  .work-page {
+    font-size: 1.4rem;
+  }
+}
 .purple-blocks-wrapper {
   width: 100%;
   height: 100%;
@@ -177,7 +184,6 @@ body {
 }
 .about-page .about-page__title {
   text-align: center;
-  margin: 0 0 2.5rem;
 }
 .about-page .about-page__subtitle {
   text-align: center;
@@ -207,8 +213,50 @@ body {
   opacity: 0.9;
 }
 
+@media screen and (min-width: 767.98px) {
+  .about-page {
+    margin: 0 4rem;
+  }
+  .about-page .about-page__subtitle {
+    margin: 1rem 0;
+  }
+  .about-page ul {
+    margin-bottom: 0.5rem;
+  }
+  .about-page .about-page__bio-wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .about-page .about-page__bio-wrapper .about-page__bio {
+    margin: 2rem 0;
+  }
+  .about-page .tools-container img {
+    height: 45px;
+  }
+}
+@media screen and (min-width: 1023.98px) {
+  .about-page {
+    margin: 0 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+    column-gap: 2rem;
+    grid-template-rows: min-content;
+  }
+  .about-page .about-page__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .about-page .about-page__bio-wrapper,
+.about-page .about-page__skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+}
 .work-page {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -410,7 +458,6 @@ body {
 }
 .projects-carousel .projects-carousel__projects-wrapper .project {
   min-width: 100%;
-  margin-bottom: 2.5rem;
   padding: 0 2rem;
 }
 .projects-carousel .projects-carousel__projects-wrapper .project .project__title {
@@ -418,13 +465,14 @@ body {
   margin: 1.5rem;
 }
 .projects-carousel .projects-carousel__projects-wrapper .project img {
-  max-width: 80%;
+  width: 80%;
+  max-width: 700px;
   display: block;
   margin: 2rem auto;
   border-radius: 4px;
 }
 .projects-carousel .projects-carousel__projects-wrapper .project .project__description {
-  margin: 2rem;
+  margin: 1rem;
 }
 .projects-carousel .projects-carousel__projects-wrapper .project .project__description p {
   margin: 0.5rem 0;
@@ -439,10 +487,36 @@ body {
   align-items: center;
   margin: 2rem;
 }
+.projects-carousel .projects-carousel__buttons .left-btn,
+.projects-carousel .projects-carousel__buttons .right-btn,
+.projects-carousel .projects-carousel__buttons .indicators {
+  cursor: pointer;
+}
 .projects-carousel .projects-carousel__buttons .indicators i {
   margin: 0.25rem;
 }
 
+@media screen and (min-width: 767.98px) {
+  .projects-carousel .projects-carousel__projects-wrapper .project {
+    padding: 0 6rem;
+  }
+}
+@media screen and (min-width: 1023.98px) {
+  .projects-carousel .projects-carousel__projects-wrapper .project {
+    padding: 0 6rem;
+  }
+  .projects-carousel .projects-carousel__projects-wrapper .project .project__description {
+    width: 50%;
+    margin: 2rem auto;
+  }
+  .projects-carousel .projects-carousel__projects-wrapper .project img {
+    width: 60%;
+  }
+  .projects-carousel .projects-carousel__buttons {
+    width: 50%;
+    margin: 2rem auto;
+  }
+}
 body {
   background-color: #121212;
   color: #fefefe;

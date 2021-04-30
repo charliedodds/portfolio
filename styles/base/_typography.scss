@@ -1,115 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 body {
-	font-family: Roboto;
-	font-weight: 100;
-	font-size: 2rem;
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 1.8rem;
 }
 
 .landing-page {
-	.landing-page__title,
-	.landing-page__subtitle {
-		font-weight: 100;
-	}
+  .landing-page__title,
+  .landing-page__subtitle {
+    font-weight: 100;
+  }
 
-	.landing-page__title {
-		font-size: 4rem;
-	}
+  .landing-page__title {
+    font-size: 4rem;
+  }
 
-	.landing-page__subtitle {
-		font-size: 2.5rem;
-	}
+  .landing-page__subtitle {
+    font-size: 2.5rem;
+  }
 
-	.landing-page__location {
-		font-size: 2rem;
-	}
+  .landing-page__location {
+    font-size: 2rem;
+  }
 
-	.landing-page__links {
-		font-size: 2.5rem;
-		a {
-			color: $white-translucent;
-			font-size: inherit;
-			font-weight: 100;
-			font-family: inherit;
-			&:hover {
-				color: $white;
-			}
-		}
-	}
+  .landing-page__links {
+    font-size: 2.5rem;
+    a {
+      color: $white-translucent;
+      font-size: inherit;
+      font-weight: 100;
+      font-family: inherit;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
 }
 
 .about-page {
-	.about-page__title {
-		font-weight: 100;
-		font-size: 3.5rem;
-	}
-	.about-page__subtitle {
-		font-weight: 100;
-		font-size: 3rem;
-	}
+  .about-page__title {
+    font-weight: 100;
+    font-size: 3.5rem;
+  }
+  .about-page__subtitle {
+    font-weight: 100;
+    font-size: 3rem;
+  }
 
-	.about-page__bio {
-		text-transform: lowercase;
-	}
-
-	.tools-container {
-		font-size: 3rem;
-	}
+  .tools-container {
+    font-size: 3rem;
+  }
 }
 
 .work-page {
-	.work-page__title {
-		font-weight: 100;
-		font-size: 3.5rem;
-	}
-	.project__title {
-		font-weight: 100;
-		font-size: 2.5rem;
-	}
+  .work-page__title {
+    font-weight: 100;
+    font-size: 3.5rem;
+  }
+  .project__title {
+    font-weight: 100;
+    font-size: 2.5rem;
+  }
 
-	.project__links {
-		font-size: 2.5rem;
-		a {
-			color: $white-translucent;
-			font-size: inherit;
-			font-weight: 100;
-			font-family: inherit;
-			&:hover {
-				color: $white;
-			}
-		}
-	}
+  .project__links {
+    font-size: 2.5rem;
+    a {
+      color: $white-translucent;
+      font-size: inherit;
+      font-weight: 100;
+      font-family: inherit;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
 
-	.projects-carousel__buttons {
-		color: $white-translucent;
-		font-size: 2.5rem;
-		.indicators {
-			font-size: 1.25rem;
-		}
-	}
+  .projects-carousel__buttons {
+    color: $white-translucent;
+    font-size: 2.5rem;
+    .indicators {
+      font-size: 1.25rem;
+    }
+  }
 }
 
 .contact-page {
-	.contact-page__title {
-		font-weight: 100;
-		font-size: 3rem;
-	}
-	.contact-page__subtitle {
-		font-weight: 100;
-		font-size: 2.5rem;
-	}
+  .contact-page__title {
+    font-weight: 100;
+    font-size: 3rem;
+  }
+  .contact-page__subtitle {
+    font-weight: 100;
+    font-size: 2.5rem;
+  }
 
-	.contact-page__links {
-		font-size: 2.5rem;
-		a {
-			color: $white-translucent;
-			font-size: inherit;
-			font-weight: 100;
-			font-family: inherit;
-			&:hover {
-				color: $white;
-			}
-		}
-	}
+  .contact-page__links {
+    font-size: 2.5rem;
+    a {
+      color: $white-translucent;
+      font-size: inherit;
+      font-weight: 100;
+      font-family: inherit;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
 }
 
+@media screen and (min-width: 767.98px) {
+  .work-page {
+    font-size: 1.4rem;
+  }
+}

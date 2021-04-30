@@ -1,48 +1,84 @@
 .projects-carousel {
-	height: 100%;
-	width: 100%;
-	.projects-carousel__projects-wrapper {
-		display: flex;
-		transition: transform 1500ms cubic-bezier(0.8, 0, 0.2, 1);
-		.project {
-			min-width: 100%;
-			margin-bottom: 2.5rem;
-			padding: 0 2rem;
+  height: 100%;
+  width: 100%;
+  .projects-carousel__projects-wrapper {
+    display: flex;
+    transition: transform 1500ms cubic-bezier(0.8, 0, 0.2, 1);
+    .project {
+      min-width: 100%;
+      padding: 0 2rem;
 
-			.project__title {
-				text-align: center;
-				margin: 1.5rem;
-			}
+      .project__title {
+        text-align: center;
+        margin: 1.5rem;
+      }
 
-			img {
-				max-width: 80%;
-				display: block;
-				margin: 2rem auto;
-				border-radius: 4px;
-			}
+      img {
+        width: 80%;
+        max-width: 700px;
+        display: block;
+        margin: 2rem auto;
+        border-radius: 4px;
+      }
 
-			.project__description {
-				margin: 2rem;
-				p {
-					margin: 0.5rem 0;
-				}
-			}
+      .project__description {
+        margin: 1rem;
+        p {
+          margin: 0.5rem 0;
+        }
+      }
 
-			.project__links {
-				display: flex;
-				justify-content: space-evenly;
-			}
-		}
-	}
-	.projects-carousel__buttons {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin: 2rem;
-		.indicators {
-			i {
-				margin: 0.25rem;
-			}
-		}
-	}
+      .project__links {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+  }
+  .projects-carousel__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    .left-btn,
+    .right-btn,
+    .indicators {
+      cursor: pointer;
+    }
+    .indicators {
+      i {
+        margin: 0.25rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  .projects-carousel {
+    .projects-carousel__projects-wrapper {
+      .project {
+        padding: 0 6rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1023.98px) {
+  .projects-carousel {
+    .projects-carousel__projects-wrapper {
+      .project {
+        padding: 0 6rem;
+        .project__description {
+          width: 50%;
+          margin: 2rem auto;
+        }
+        img {
+          width: 60%;
+        }
+      }
+    }
+    .projects-carousel__buttons {
+      width: 50%;
+      margin: 2rem auto;
+    }
+  }
 }
