@@ -62,7 +62,7 @@ const getPrevProject = () => {
 };
 
 const getThisProject = (e) => {
-  viewingProject = e.target.closest('.fa-circle').id;
+  viewingProject = +e.target.closest('.fa-circle').id;
   updateProjectIndicators();
   projectsWrapper.style.transform = getTranslateXString();
 };
