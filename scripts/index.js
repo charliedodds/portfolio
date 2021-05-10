@@ -42,7 +42,7 @@ const updateProjectIndicators = () => {
 };
 
 const getNextProject = () => {
-  if (viewingProject < 2) {
+  if (viewingProject < 3) {
     viewingProject += 1;
   } else {
     viewingProject = 0;
@@ -55,7 +55,7 @@ const getPrevProject = () => {
   if (viewingProject >= 1) {
     viewingProject -= 1;
   } else {
-    viewingProject = 2;
+    viewingProject = 3;
   }
   updateProjectIndicators();
   projectsWrapper.style.transform = getTranslateXString();
