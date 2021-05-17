@@ -10,6 +10,12 @@
     text-align: center;
   }
 
+  .about-page__bio-wrapper {
+    .about-page__subtitle {
+      display: none;
+    }
+  }
+
   .about-page__subtitle {
     text-align: center;
     margin: 1.5rem 0 1rem;
@@ -84,6 +90,12 @@
     .about-page__title {
       grid-column-start: 1;
       grid-column-end: 3;
+    }
+
+    .about-page__bio-wrapper {
+      .about-page__subtitle {
+        display: block;
+      }
     }
 
     .about-page__bio-wrapper,
