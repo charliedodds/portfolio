@@ -1,0 +1,15 @@
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: $bg-primary;
+  background: linear-gradient($bg-secondary, $bg-primary);
+  transform: scale(0.003);
+  animation: load 1500ms ease-in-out 500ms 1 forwards;
+  opacity: 0;
+  @media screen and (min-width: 1100px) {
+    animation-delay: 2500ms;
+  }
+}

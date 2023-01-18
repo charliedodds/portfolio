@@ -1,0 +1,37 @@
+html,
+body {
+  font-family: 'Unbounded';
+  color: $color;
+
+  .hero {
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    ul {
+      li {
+        &:not(:last-of-type) {
+          text-decoration: line-through;
+        }
+        &:last-of-type {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .work, .contact {
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+footer {
+  font-size: 0.8rem;
+}

@@ -1,0 +1,16 @@
+.dot {
+  display: none;
+  @media screen and (min-width: 1100px) {
+    display: unset;
+    height: 3px;
+    width: 3px;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-25px - 50%));
+    background-color: $bg-primary;
+    animation: spin 2s ease-in-out 500ms 1 forwards;
+    transform-origin: 0 25px;
+  }
+}

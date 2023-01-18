@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;500;700;900&display=swap');
+
+@import './abstracts/variables';
+@import './abstracts/animations';
+
+@import './base/reset';
+@import './base/typography';
+
+@import './layout/parallax';
+@import './layout/hero';
+@import './layout/work';
+@import './layout/contact';
+
+@import './components/dot';
+@import './components/bg';
+@import './components/footer';

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../shared/assets/logo.svg" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/2b19c75420.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Charlie Dodds</title>
+  </head>
+  <body>
+    <div class="purple-blocks-wrapper">
+      <div class="purple-block"></div>
+      <div class="purple-block"></div>
+    </div>
+    <main class="main">
+      <header id="home" class="landing-page">
+        <h1 class="landing-page__title">charlie dodds</h1>
+        <h2 class="landing-page__subtitle">web developer</h2>
+        <p class="landing-page__location">london</p>
+        <section class="landing-page__links">
+          <a target="_blank" href="https://github.com/charliedodds/"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a target="_blank" href="https://www.linkedin.com/in/charlie-dodds/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </section>
+      </header>
+      <img class="nav-btn" src="../shared/assets/logo.svg" alt="cd logo" />
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#work">work</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+      <section
+        id="about"
+        data-aos="fade-right"
+        data-aos-delay="200"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out"
+        class="about-page"
+      >
+        <h2 class="about-page__title">about</h2>
+        <section class="about-page__bio-wrapper">
+          <h3 class="about-page__subtitle">bio</h3>
+          <p class="about-page__bio">I'm a web developer from London.</p>
+          <p class="about-page__bio">
+            I taught myself for about 6 months before being offered a free place
+            on a _nology bootcamp to cement my technical skills and develop
+            collaborative, professional skills.
+          </p>
+          <p class="about-page__bio">
+            I love being outside, especially skiing and snowboarding in the
+            mountains.
+          </p>
+        </section>
+        <section class="about-page__skills">
+          <h3 class="about-page__subtitle">skills</h3>
+          <ul>
+            <li>problem solving</li>
+            <li>independence</li>
+            <li>communication</li>
+            <li>leadership</li>
+            <li>teamwork</li>
+            <li>resilience</li>
+          </ul>
+          <h3 class="about-page__subtitle">tools</h3>
+          <div class="tools-container">
+            <!-- <img class="tools-img linux" src="./assets/linux.svg" />
+            <img
+              class="tools-img visualstudiocode"
+              src="./assets/visualstudiocode.svg"
+            />
+            <img class="tools-img figma" src="./assets/figma.svg" />
+            <img class="tools-img git" src="./assets/git.svg" />
+            <img class="tools-img github" src="./assets/github.svg" />
+            <img class="tools-img html5" src="./assets/html5.svg" />
+            <img class="tools-img css3" src="./assets/css3.svg" /> -->
+            <img class="tools-img sass" src="./assets/sass.svg" />
+            <img class="tools-img bootstrap" src="./assets/bootstrap.svg" />
+            <img class="tools-img typescript" src="./assets/typescript.svg" />
+            <img class="tools-img react" src="./assets/react.svg" />
+            <img class="tools-img reactrouter" src="./assets/reactrouter.svg" />
+            <img class="tools-img node-dot-js" src="./assets/node-dot-js.svg" />
+            <img class="tools-img express" src="./assets/express.svg" />
+            <img class="tools-img mongodb" src="./assets/mongodb.svg" />
+          </div>
+        </section>
+      </section>
+      <section
+        id="work"
+        data-aos="fade-left"
+        data-aos-delay="200"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out"
+        class="work-page"
+      >
+        <h2 class="work-page__title">work</h2>
+        <section class="projects-carousel">
+          <section class="projects-carousel__projects-wrapper">
+            <section class="project">
+              <h3 class="project__title">college thrifts</h3>
+              <img src="./assets/college-thrifts-screenshot.png" />
+              <section class="project__description">
+                <p>
+                  This website was for a client as part of the _nology bootcamp.
+                </p>
+                <p>
+                  In a group of 9, we built an MVP whilst pair programming in an
+                  Agile environment using React with a Firebase backend.
+                </p>
+                <p>You can see the live demo below.</p>
+              </section>
+              <section class="project__links">
+                <!-- <a
+                  target="_blank"
+                  href="https://github.com/nology-tech/college-thrifts"
+                  ><i class="fab fa-github"></i
+                ></a> -->
+                <a target="_blank" href="https://college-thrifts.web.app/"
+                  ><i class="fas fa-globe"></i
+                ></a>
+              </section>
+            </section>
+            <section class="project">
+              <h3 class="project__title">steam sales calculator</h3>
+              <img src="./assets/steam-sales-screenshot.png" />
+              <section class="project__description">
+                <p>This website was built as part of The Odin Project.</p>
+                <p>
+                  The task was to use React Router to display information from
+                  an API and be able to add items to a basket.
+                </p>
+                <p>
+                  As part of the _nology bootcamp I refactored this project into
+                  TypeScript.
+                </p>
+                <p>You can see the code or live demo below.</p>
+              </section>
+              <section class="project__links">
+                <a
+                  target="_blank"
+                  href="https://github.com/charliedodds/shopping-cart"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://charliedodds.github.io/shopping-cart/"
+                  ><i class="fas fa-globe"></i
+                ></a>
+              </section>
+            </section>
+            <section class="project">
+              <h3 class="project__title">whack-a-mole</h3>
+              <img src="./assets/whack-a-mole-screenshot.png" />
+              <section class="project__description">
+                <p>This game was built as part of the _nology bootcamp.</p>
+                <p>
+                  I had one week of afternoons to design and build a functional
+                  JavaScript game.
+                </p>
+                <p>You can see the code or live demo below.</p>
+              </section>
+              <section class="project__links">
+                <a
+                  target="_blank"
+                  href="https://github.com/charliedodds/whack-a-mole"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://charliedodds.github.io/whack-a-mole/"
+                  ><i class="fas fa-globe"></i
+                ></a>
+              </section>
+            </section>
+            <section class="project">
+              <h3 class="project__title">todo list</h3>
+              <img src="./assets/todo-screenshot.png" />
+              <section class="project__description">
+                <p>This Todo List was built as part of The Odin Project.</p>
+                <p>
+                  The task was to dynamically create Project and Todo objects
+                  and save data to local storage.
+                </p>
+                <p>You can see the code or live demo below.</p>
+              </section>
+              <section class="project__links">
+                <a
+                  target="_blank"
+                  href="https://github.com/charliedodds/todo-list"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://charliedodds.github.io/todo-list/"
+                  ><i class="fas fa-globe"></i
+                ></a>
+              </section>
+            </section>
+          </section>
+          <section class="projects-carousel__buttons">
+            <section class="left-btn">
+              <i class="fas fa-chevron-left"></i>
+            </section>
+            <section class="indicators">
+              <i id="0" class="fas fa-circle"></i>
+              <i id="1" class="far fa-circle"></i>
+              <i id="2" class="far fa-circle"></i>
+              <i id="3" class="far fa-circle"></i>
+            </section>
+            <section class="right-btn">
+              <i class="fas fa-chevron-right"></i>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section
+        id="contact"
+        data-aos="fade-right"
+        data-aos-delay="200"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out"
+        class="contact-page"
+      >
+        <h2 class="contact-page__title">contact</h2>
+        <section class="contact-page__links">
+          <a target="_blank" href="https://github.com/charliedodds/"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a target="_blank" href="https://www.linkedin.com/in/charlie-dodds/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </section>
+      </section>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

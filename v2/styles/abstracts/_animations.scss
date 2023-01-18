@@ -1,0 +1,45 @@
+@keyframes spin {
+  50% {
+    transform: translate(-50%, calc(-25px - 50%)) rotate(360deg);
+  }
+
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes load {
+  1% {
+    opacity: 1;
+  }
+
+  75% {
+    transform: scaleX(0.003);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes load2 {
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  100% {
+    opacity: 1;
+    transform: translate(0) rotate(0);
+  }
+}
